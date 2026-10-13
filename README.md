@@ -1,5 +1,12 @@
 # Model Monitoring System
 
+## Overview
+
+A model monitoring exercise that checks for drift by comparing the live mean with the training mean. `POST /score` computes the absolute difference between the two and labels the result drift-watch when it is at or above 2. It is a simple first step toward drift monitoring rather than a full statistical test.
+
+- **Built with:** Python, pytest, GitHub Actions
+- **Scope:** ML engineering exercise run locally; it calls no hosted model and does not apply production changes.
+
 <!-- project-guide:start -->
 ## Project guide
 
